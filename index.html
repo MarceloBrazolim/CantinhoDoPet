@@ -1,0 +1,203 @@
+﻿<html><head>
+
+	<title>Cantinho do Pet</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css" charset="utf-8"> <!--conecta com o css-->
+
+</head>
+
+<body>
+
+	<div id="page">
+
+		<div id="header">
+
+			<div id="logo" class="top-bottom">
+
+				<img src="img/logo-top.png" alt="Logo" id="imgLogo">
+
+				<h1>Cantinho do Pet</h1>
+
+			</div>
+
+			<div id="menu" class="menu"> <!--itens do menu-->
+
+				<a href="#" class="middle" onclick="showMessage();" accesskey="a"><u>A</u>tendimento Veterinário</a>
+
+				<a href="#" class="middle" onclick="showMessage();" accesskey="b"><u>B</u>anho e Tosa</a>
+
+				<a href="#" class="middle" onclick="showMessage();" accesskey="m">Pro<u>m</u>oções</a>
+
+				<a href="#" class="middle" onclick="showMessage();" accesskey="c"><u>C</u>ontatos</a>
+
+			</div>
+
+		</div>
+
+		<div id="content">
+
+			<div id="carousel"> <!--itens do carrosel-->
+
+				<div class="item item-carousel">
+
+					<img src="img/carousel-img-03.jpg" alt="Roucao">
+
+					<div class="item-text">
+
+						<h2>Oferta Imperdível banho + tosa!</h2>
+
+						<span>Pacote a partir de R$55,00</span>
+
+					</div>
+
+				</div>
+
+				<div class="item item-carousel" style="display: none;">
+
+					<img src="img/carousel-img-05.jpg" alt="Tosa">
+
+					<div class="item-text">
+
+						<h2>Tosa de seu bichino</h2>
+
+						<span>a partir R$45,00</span>
+
+					</div>	
+
+				</div>
+
+				<div class="item item-carousel" style="display: none;">
+
+					<img src="img/carousel-img-01.jpg" alt="Banho">
+
+					<div class="item-text">
+
+						<h2>Transporte gratuito</h2>
+
+						<span>No pacote Banho e Tosa</span>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<h1 id="list-title">Confira nossos destaques</h1>
+
+			<div id="list"> <!--itens do destaque-->
+
+				<div class="item">
+
+					<div class="item-info">
+
+						<img src="img/thumb-08.jpg" alt="Banho">
+
+						<h2>Banho</h2>
+
+						<p>Banho a partir de</p>
+
+						<p>R$30,00</p>
+
+					</div>
+
+				</div>
+
+				<div class="item">
+
+					<div class="item-info">
+
+						<img src="img/thumb-05.jpg" alt="Banho e Tosa">
+
+						<h2>Banho e Tosa</h2>
+
+						<p>Pacote </p>
+
+						<p>R$55,00</p>
+
+					</div>
+
+				</div>
+
+				<div class="item">
+
+					<div class="item-info">
+
+						<img src="img/thumb-07.jpg" alt="Veterinário">
+
+						<h2>Veterinário</h2>
+
+						<p>Marque uma Consulta</p>
+
+						<p>R$50,00</p>
+
+					</div>
+
+				</div>
+
+				<div class="item">
+
+					<div class="item-info">
+
+						<img src="img/thumb-04.jpg" alt="Transporte">
+
+						<h2>Transporte</h2>
+
+						<p>Seguro e</p>
+
+						<p>GRATUITO</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="footer" class="bottom"> <!--rodapé com newsletter-->
+
+			<form id="formNovidades" method="POST">
+
+				<h3>Recebe novidades por email</h3>
+
+				<label for="inputNome">Nome:</label>
+
+				<input type="text" name="nome" id="inputNome">
+
+				<label for="inputEmail">Email:</label>
+
+				<input type="email" name="email" id="inputEmail">
+
+				<input type="submit" value="Enviar" class="button">
+
+				<div id="formNovidadesAlert" style="display:none;">
+
+					<span class="alert">É necessário informar todos os campos</span>
+
+				</div>
+
+			</form>
+
+			<div id="info"> <!--e informações da empresa (tao legais quanto o alerta dos menus!)-->
+
+				<p>Cantinho do Pet SA</p>
+
+				<p>Rua perto da casa do Paulo, 42069, Loompalandia</p>
+
+				<p>Copyright(nice)</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="scripts/main.js"></script> <!--scrips geral e do carrosel do java script-->
+
+	<script src="scripts/carousel.js"></script>
+
+
+
+</body></html>

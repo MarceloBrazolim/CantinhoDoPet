@@ -1,0 +1,195 @@
+body {
+	background-color: #fefefe;
+	margin: 0;
+	font-family: Trebuchet MS, sans-serif;
+	}
+
+	.top-bottom{ /*define as propriedades e estilo do topo da pagina, incluindo logo, titulo e fundo*/
+	background-image: linear-gradient(to top, rgba(18,128,202,0), rgba(18,128,202,0.7)); /*define o degrade do topo da pagina*/
+	color: rgb(233,98,128);
+	display:flex;
+	align-items: center;
+	padding: 5px;
+	}
+
+#imgLogo{
+	width: 70px;
+	margin: 10px;
+}
+
+.menu{ /*define propriedades e estilo do menu*/
+	background-image: linear-gradient(rgb(255, 181, 197), rgb(233, 98, 128));
+	display: table;
+	width: 98%;
+	margin: 5px auto 50px auto;
+	border-radius: 25px;
+}
+
+.menu a{
+	display: table-cell;
+	max-width: 0px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+}
+
+.menu a.middle{
+	border-right: 5px solid-white;
+}
+
+#carousel{ /*define propriedades e estilo do carrosel de imagens*/
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+#carousel .item img{
+	width: 100%;
+}
+
+#carousel .item{
+	position: relative;
+}
+
+#carousel .item .item-text{
+	width: 100%;
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: right;
+	padding-bottom: 30px;
+	background-color: rgba(95, 164, 211, 0.7);
+	color:#FFB5C5;
+}
+
+#carousel .item .item-text h2{
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 30px;
+	line-height: 1em;
+}
+
+#carousel .item .item-text span{
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 30px;
+}
+
+#list .item{ /*define propriedades e estilo dos destaques*/
+	float: left;
+	height: 370px;
+	overflow: hidden;
+	width: 25%;
+}
+
+.item-info{
+	position: relative;
+	margin: auto;
+	max-width: 280px;
+}
+
+.item-info img{
+	width:100%;
+	height:200px;
+}
+
+.item-info h2{
+	margin: 0;
+	font-size: 30px;
+	color:#1E90FF;
+}
+
+.item-info p{
+	margin: 0;
+	line-height: 1.5em;
+	font-size: 16pt;
+	color: #1C1C1C;
+}
+
+
+ /*impede que os itens de destaque fiquem amontoados dependendo do tamanho da janela de exibição*/
+@media screen and (min-width: 768px){
+	#list .item{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	#list .item{
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#list .item{
+		width: 100%;
+	}
+}
+
+#list-title{ /*literalmente: "Confira nossos destaques"*/
+	font-weight: bold;
+	text-align: center;
+	margin:50px 0 30px 0;
+}
+
+.bottom{ /*define propriedades e estilo do rodapé*/
+	background-color: rgb(95, 164, 211);
+	color:gren;
+	display: inline-block;
+	width: 100%;
+}
+		
+.bottom form{
+	float:left;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.bottom #info{
+	float: right;
+	text-align: right;
+	margin-right: 50px;
+}
+
+.bottom form h3{
+	margin: 0 0 10px 0;
+}
+
+.button{ /*estiliza o botao de enviar*/
+	background-image: linear-gradient(rgb(226, 126, 147), rgb(233, 98, 128));
+	border: 0;
+	color: yellow;
+	padding: 4px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.button:hover{
+	text-decoration: underline;
+}
+
+.alert{ /*estiliza a mensagem de alerta da newsletter*/
+	border-radius: 5px;
+	text-align: right;
+	background-color: rgba(178, 57, 67, 0.9);
+	color: white;
+	margin: 5px 0 0 0;
+	padding:2px 5px 2px 5px;
+	float:right;
+}
+
+.item-carousel { /*define a animação de transição dos itens no carrosel*/
+	animation-name:fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
